@@ -19,4 +19,4 @@ df.reset_index(inplace=True,drop=True)
 df.columns = np.arange(0, len(df.columns))
 
 print(df)
-df.to_csv("report(2).csv", header=None, index=None) #output into a csv file
+df.to_csv("report(2).csv", header=None) #output into a csv file
