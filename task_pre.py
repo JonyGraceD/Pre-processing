@@ -15,7 +15,7 @@ df.replace("", np.NaN, inplace=True)
 df.dropna(how="all", axis=1, inplace=True) #axis=1--> columns
 df.dropna(how="all", axis=0, inplace=True) #axis=0--> rows
 #reset index and header 
-df.reset_index(inplace=True)
+df.reset_index(inplace=True,drop=True)
 df.columns = np.arange(0, len(df.columns))
 
 print(df)
